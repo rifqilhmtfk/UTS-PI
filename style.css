@@ -1,0 +1,566 @@
+* {
+  font-family: "Cambay", sans-serif;
+  line-height: 20px;
+  font-size: 15px;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.rifqit_page-in {
+  width: 1000px;
+  margin: auto;
+}
+
+.rifqit_page-full {
+  width: 100%;
+}
+
+nav {
+  z-index: 100;
+  color: black;
+  text-align: center;
+  position: fixed;
+  line-height: 60px;
+  width: 100%;
+  background-color: black;
+  transition: background-color 0.5s ease;
+}
+
+nav.rifqit_white {
+  background-color: white;
+}
+
+nav .rifqit_logo {
+  float: left;
+  position: relative;
+  line-height: 55px;
+  text-align: center;
+}
+
+nav .rifqit_logo img {
+  vertical-align: middle;
+  width: 100px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+nav .rifqit_menu {
+  float: right;
+  height: 60px;
+  max-width: 600px;
+}
+
+nav .rifqit_menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.7rem;
+}
+
+nav .rifqit_menu ul li {
+  list-style-type: none;
+  float: left;
+  line-height: 50px;
+}
+
+nav ul li a {
+  color: white;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* pengaturan header */
+
+header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+header .rifqit_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #2b2b2b;
+  opacity: 75%;
+  z-index: -1;
+}
+
+header img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -2;
+  width: 100%;
+}
+
+header .rifqit_intro {
+  z-index: 100;
+  text-align: center;
+  position: relative;
+  top: 50%;
+}
+
+header .rifqit_intro h3 {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  color: #967c55;
+}
+
+header .rifqit_intro p {
+  color: white;
+}
+
+.rifqit_button {
+  background-color: #967c55;
+  height: 40px;
+  line-height: 42px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 20px 0px 20px;
+  font-size: 15px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.rifqit_button-menu {
+  position: absolute;
+  top: 1.7rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.rifqit_button-menu .rifqit_line {
+  height: 3px;
+  background-color: white;
+}
+
+section {
+  padding: 50px 0px 50px 0;
+}
+
+section h3 {
+  font-size: 30px;
+}
+
+section h3::after {
+  content: "";
+  border-bottom: 5px solid black;
+  width: 52px;
+  display: block;
+  margin: 20px auto;
+}
+
+#rifqit_about,
+#rifqit_team,
+#rifqit_support {
+  text-align: center;
+}
+
+#rifqit_support h3 {
+  text-align: center;
+}
+
+#rifqit_support img {
+  height: 50px;
+  display: center;
+  flex-direction: row;
+}
+
+.rifqit_page-in div {
+  display: center;
+}
+
+section p.rifqit_short {
+  font-style: italic;
+  font-size: 18px;
+  color: #967c55;
+}
+
+section .rifqit_content p {
+  font-style: normal;
+}
+
+/* Navbar */
+nav.rifqit_white {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Button wide */
+nav.rifqit_white .rifqit_button-menu .rifqit_line {
+  background-color: white;
+}
+
+section.rifqit_cream {
+  background-color: #f3eeea;
+}
+
+/* Support */
+.rifqit_support,
+.rifqit_gallery,
+.rifqit_tim {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.rifqit_support h6,
+.rifqit_tim h6 {
+  margin: 0px;
+  margin-top: 20px;
+  padding: 0px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.rifqit_support img {
+  width: 50px;
+}
+
+.rifqit_support div,
+.rifqit_tim div {
+  text-align: center;
+  width: 26%;
+}
+
+/* Gallery */
+#rifqit_gallery {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#rifqit_gallery h3 {
+  text-align: center;
+}
+
+#rifqit_gallery p {
+  text-align: center;
+}
+
+.rifqit_ft {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 10px;
+}
+
+#rifqit_gallery img {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+/* Quote */
+section.rifqit_quote {
+  background: url("./img/ft9.jpg") no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+  padding: 100px;
+  font-weight: bold;
+}
+
+section.rifqit_quote .rifqit_page-in p {
+  display: inline;
+  background: url("./img/q1.png") no-repeat;
+  padding: 40px;
+}
+
+/* Tim */
+.rifqit_tim img {
+  width: 100%;
+  box-shadow: 0px -1px 10px 0px#2B2B2B;
+  border-radius: 100%;
+}
+
+/* blog */
+#rifqit_blog {
+  text-align: center;
+}
+
+.rifqit_blog {
+  display: flex;
+  flex-direction: column;
+}
+
+.rifqit_blog .rifqit_area {
+  width: 100%;
+  box-shadow: 0px -1px 10px #2b2b2b;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.rifqit_blog div.rifqit_area div {
+  width: 50%;
+}
+.rifqit_blog .rifqit_area .rifqit_image {
+  border-radius: 5px 0px 0px 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+.rifqit_blog .rifqit_area .rifqit_text article {
+  padding: 40px;
+}
+.rifqit_blog .rifqit_area .rifqit_text article h4 {
+  margin: 0;
+  text-align: left;
+}
+.rifqit_blog .rifqit_area .rifqit_text article a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.5s ease;
+  font-size: 20px;
+}
+
+.rifqit_blog .rifqit_area .rifqit_text article span {
+  text-align: left;
+}
+
+.rifqit_blog .rifqit_area .rifqit_text article p {
+  text-align: left;
+}
+
+.rifqit_blog .rifqit_area .rifqit_text article a:hover {
+  color: #967c55;
+}
+
+/* Contact */
+#rifqit_contact1 {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0px 0px 10px 0px#2B2B2B;
+}
+
+.rifqit_contact-map {
+  width: 100%;
+  height: auto;
+  flex: 50%;
+}
+
+.rifqit_contact-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.rifqit_contact-form {
+  width: 100%;
+  height: 100%;
+  flex: 50%;
+  text-align: center;
+  align-items: center;
+  margin: 20px;
+  padding-right: 20px;
+}
+
+.rifqit_contact-form h3 {
+  margin-bottom: 10px;
+}
+
+.rifqit_contact-form-txt::placeholder {
+  color: #2b2b2b;
+}
+
+.rifqit_contact-form-txt {
+  width: 100%;
+  height: 10px;
+  color: black;
+  border: 1px solid #2b2b2b;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.rifqit_contact-form-textarea {
+  width: 100%;
+  height: 130px;
+  color: black;
+  border: 1px solid #2b2b2b;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.rifqit_contact-form-textarea::placeholder {
+  color: #2b2b2b;
+}
+
+.rifqit_contact-form-btn {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 20px;
+}
+
+/* Footer */
+footer {
+  padding: 50px 0px 50px 0px;
+  background-color: #2b2b2b;
+  color: white;
+}
+
+footer .rifqit_page-in {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .rifqit_page-in div {
+  width: 20%;
+}
+
+footer .rifqit_page-in h5 {
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer .rifqit_page-in .rifqit_copyright {
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #f3eeea;
+  text-align: center;
+}
+
+.rifqit_ico-list {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.rifqit_ico-list svg {
+  color: white;
+  vertical-align: middle;
+  align-items: center;
+  top: 10px;
+  padding-right: 15px;
+}
+
+/* Responsive */
+@media screen and (max-width: 991.98px) {
+  .rifqit_page-in {
+    width: 90%;
+  }
+
+  nav .rifqit_menu ul {
+    display: none;
+    margin-top: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  nav .rifqit_menu ul li {
+    width: 100%;
+    border-bottom: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
+    line-height: 40px;
+  }
+
+  nav .rifqit_menu ul li a {
+    color: white;
+  }
+
+  .rifqit_button-menu {
+    display: flex;
+  }
+
+  header .rifqit_intro h3 {
+    width: 100%;
+    font-size: 25px;
+  }
+
+  header .rifqit_intro p {
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .rifqit_support {
+    display: block;
+    padding: 20px;
+  }
+
+  .rifqit_support div {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .rifqit_blog .rifqit_area {
+    display: block;
+    margin-top: 20px;
+  }
+  .rifqit_blog div.rifqit_area div {
+    width: 100%;
+  }
+  .rifqit_blog .rifqit_area .rifqit_image {
+    border-radius: 5px 5px 0px 0px;
+    height: 200px;
+  }
+
+  #rifqit_contact1 {
+    flex-wrap: wrap;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: auto;
+  }
+
+  header img {
+    height: 100%;
+    background-image: url("./img/bg3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
